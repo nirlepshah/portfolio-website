@@ -1,0 +1,230 @@
+:root {
+  --background_color: #f1f1f1;
+  --text_color: #0000ff;
+  --active_text_color: #ad0034;
+  --link_active_color: #ff69b4;
+  --link_hover_color: #a52a2a;
+  --link_visisted_color: #808080;
+  --secondary_button: #ffffff;
+  --secondary_button_background: #4169e1;
+  --element_background: #d3d3d3;
+  --grid_background: #b0c4de;
+  --anchor_button_color: #357b70;
+  --anchor_button_text: #ffffff;
+  --text_color_work: #000094;
+
+  --font_size: 1.25rem;
+  --font_family: fantasy;
+  --font_family_body: "Andada Pro", serif;
+  --font_family_secondbutton: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font_family_body);
+  margin: 0;
+  background-color: var(--background_color);
+  position: relative;
+  min-height: 100vh;
+  padding-left: 10px;
+  padding-bottom: 85px;
+}
+
+p {
+  font-size: var(--font_size);
+  font-style: normal;
+}
+
+.navigation-list__item {
+  font-family: var(--font_family);
+  color: var(--text_color);
+}
+
+.navigation-list__item--active {
+  font-family: var(--font_family);
+  color: var(--active_text_color);
+  text-decoration: none;
+}
+
+.primary_link:hover {
+  text-decoration: none;
+}
+
+.secondary_link:visited {
+  color: var(--link_visisted_color);
+}
+
+.secondary_link:hover {
+  color: var(--link_hover_color);
+}
+
+.secondary_link:active {
+  color: var(--link_active_color);
+}
+
+.primary_button:hover,
+.secondary_button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.secondary_button {
+  font-family: var(--font_family_secondbutton);
+  background-color: var(--secondary_button_background);
+  color: var(--secondary_button);
+  padding: 10px;
+  border-radius: 5rem;
+}
+
+.profile {
+  max-width: 43.75rem;
+  margin: 0 auto;
+}
+.profile_image {
+  float: left;
+  width: 18.75rem;
+  margin-right: 2.5rem;
+  border-radius: 50%;
+}
+
+.button {
+  clear: both;
+}
+.footer {
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: var(--element_background);
+  line-height: 0.2rem;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--element_background);
+  height: 5rem;
+}
+.page-header:last-child {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+.navigation-list {
+  padding: 0.125rem;
+}
+
+.work {
+  text-align: center;
+  color: var(--text_color_work);
+  text-decoration: underline;
+  line-height: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  justify-content: center;
+  overflow: hidden;
+}
+.grid__item {
+  background-color: var(--grid_background);
+  overflow: auto;
+  padding: 5px;
+  margin: 5px;
+}
+.grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+@media all and (min-width: 500px) and (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: var(--font_size);
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.button1 {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--anchor_button_color);
+  color: var(--anchor_button_text);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.button1:hover,
+.button1:focus {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.berlin-image {
+  display: block;
+  text-align: center;
+  height: auto;
+  animation-name: pop;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes pop {
+  0% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: skew(5deg);
+  }
+  100% {
+    transform: translate(10px);
+  }
+}
+label {
+  display: block;
+  width: 100px;
+  text-align: left;
+  padding: 0.5rem;
+}

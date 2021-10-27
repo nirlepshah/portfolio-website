@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My First WebPage</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <script src="./JS/tota11y.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.production.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- My logo will be inserted here in the header section -->
+      <img
+        src="./img/logo3.png"
+        alt="Logo of my name"
+        class="page-header__logo"
+      />
+
+      <!-- Links to navigate to pages to find about me and my contact details -->
+
+      <nav>
+        <ul class="navigation">
+          <li role="presentation" class="navigation-list">
+            <a href="index.html" class="navigation-list__item">Home</a>
+          </li>
+
+          <li role="presentation" class="navigation-list">
+            <a href="about.html" class="navigation-list__item--active">About</a>
+          </li>
+
+          <li role="presentation" class="navigation-list">
+            <a href="contact.html" class="navigation-list__item">Contact</a>
+          </li>
+          <li role="presentation" class="navigation-list">
+            <a href="work.html" class="navigation-list__item">Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <br />
+
+    <h1>About</h1>
+    <p>This page is about myself. This is what I enjoy doing:</p>
+    <ul>
+      <li>Front-end development</li>
+      <li>Back-end development</li>
+      <li>Test driven development</li>
+      <li>Climbing</li>
+    </ul>
+
+    <a href="files/cv.pdf" class="button1" target="_blank">Download my CV</a
+    ><br />
+
+    <div class="berlin-image">
+      <img src="./img/berlin.svg" alt="svgimage" />
+    </div>
+
+    <p>I am a Student of the Web Development Course</p>
+    <p>My Career aspirations are to be a full stack Web Developer</p>
+    <table>
+      <caption>
+        <strong> Below is the summary of my IT skills</strong>
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Skills</th>
+          <th scope="col">Years of Experience</th>
+          <th scope="col">Level of Expertise</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">HTML</th>
+          <td>3</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <th scope="row">Java</th>
+          <td>2</td>
+          <td>Basic</td>
+        </tr>
+        <tr>
+          <th scope="row">CSS</th>
+          <td>3</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <th scope="row">Python</th>
+          <td>1</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <th scope="row">JavaScript</th>
+          <td>2</td>
+          <td>Intermediate</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th>IT Skills overview</th>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="footer">
+      <p><strong> Find me on </strong></p>
+      <div>
+        <a href="https://github.com/">
+          <img src="./img/github_icon.svg" alt="Github Logo"
+        /></a>
+
+        <a href="https://twitter.com/">
+          <img src="./img/twitter_icon.svg" alt="Twitter Logo"
+        /></a>
+
+        <a href="https://www.linkedin.com/">
+          <img src="./img/linkedin_icon.svg" alt="LinkedIn Logo"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
