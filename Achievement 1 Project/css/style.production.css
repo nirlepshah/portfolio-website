@@ -174,7 +174,6 @@ p {
     font-size: 1.25rem;
   }
 }
-
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
