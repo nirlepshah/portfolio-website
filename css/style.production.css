@@ -16,7 +16,8 @@ body {
   background-color: #f1f1f1;
   position: relative;
   min-height: 100vh;
-  padding-left: 10px;
+  padding-left: 0.6rem;
+  padding-right: 0.8rem;
   padding-bottom: 85px;
   background-image: url(../img/background2.jpg);
   background-size: cover;
@@ -80,7 +81,7 @@ p {
 
 .button {
   clear: both;
-  text-align: right;
+  text-align: center;
   padding: 2rem;
 }
 .footer {
@@ -232,9 +233,10 @@ p {
 }
 .one {
   -ms-flex-item-align: start;
-  align-self: flex-start;
+  align-self: center;
 }
 .two {
+  padding-top: 2rem;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -243,7 +245,7 @@ p {
 
 .three {
   -ms-flex-item-align: start;
-  align-self: flex-start;
+  align-self: center;
   padding-top: 5rem;
 }
 
@@ -289,4 +291,21 @@ label {
   width: 100px;
   text-align: left;
   padding: 0.5rem;
+}
+
+.contact1{
+  text-align: center;
+  
+}
+.form1{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  
+}
+
+.form{
+  padding-top: 2rem;
+  text-align: center;
+  
 }
