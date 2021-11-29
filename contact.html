@@ -76,36 +76,44 @@
     <h3 class="form">Submit below form:</h3>
 
     <div class="form1">
-      <form action="#" method="post" id="contact-form">
-        <label for="contact-name" class="standard-label">Name:</label>
-        <input type="text" id="contact-name" required />
+     <form action="#" method="post" id="contact-form">
+      <label for="contact-name" class="standard-label">Name:</label>
+      <input type="text" id="contact-name" required />
 
-        <label for="contact-lname" class="standard-label">LastName:</label>
-        <input type="text" id="contact-lname" />
+      <label for="contact-lname" class="standard-label">LastName:</label>
+      <input type="text" id="contact-lname" />
 
-        <label for="contact-email" class="standard-lable">E-mail: </label>
-        <input type="email" id="contact-email" required />
+      <div id="input-wrapper">
+        <label for="contact-email" class="standard-label">E-mail: </label>
 
-        <label for="contact-tel" class="standard-lable">Telephone: </label>
         <input
-          type="tel"
-          id="contact-tel"
-          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          type="email"
+          id="contact-email"
+          placeholder="Enter email address"
           required
-        /><br /><br />
+        />
+        <span id="text"></span>
+      </div>
+      <label for="contact-tel" class="standard-label">Telephone: </label>
+      <input
+        type="tel"
+        id="contact-tel"
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        required
+      /><br /><br />
 
-        <label for="contact-message" class="standard-lable">Message: </label>
+      <label for="contact-message" class="standard-label">Message: </label>
 
-        <textarea
-          placeholder="Enter your message here"
-          required
-          maxlength="240"
-          id="contact-message"
-        ></textarea>
-        <br />
-        <br />
-        <input type="submit" value="Send message" />
-      </form>
+      <textarea
+        placeholder="Enter your message here"
+        required
+        maxlength="240"
+        id="contact-message"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Send message" />
+    </form>
     </div>
     <br /><br /><br /><br /><br /><br /><br /><br />
     <div class="footer">
