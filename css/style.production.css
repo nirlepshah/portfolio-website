@@ -122,6 +122,7 @@ p {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  font-size: x-large;
 }
 .navigation-list {
   padding: 0.125rem;
