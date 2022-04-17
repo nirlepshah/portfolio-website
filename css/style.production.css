@@ -320,7 +320,15 @@ label {
 #contact{
   padding-top: 4.5rem;
 }
+html {
+	scroll-behavior:smooth;
+}
 
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 .form1{
   display: flex;
   justify-content: center;
@@ -401,4 +409,12 @@ input[type=submit]:hover {
   text-align: center;
   margin-left: 12rem;
   margin-top: 1rem;
+}
+.Top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: black;
+  color: white;
+
 }
