@@ -21,64 +21,399 @@
     <link rel="stylesheet" type="text/css" href="./css/style.production.css" />
   </head>
   <body>
-    <!-- Portfolio Header Section -->
+    <div class="pageheader">
+      <header class="page-header">
+        <!-- Links to navigate to pages to find about me and my contact details -->
 
-    <header class="page-header">
-      <!-- My logo will be inserted here in the header section -->
-      <img
-        src="./img/namelogo.png"
-        alt="Logo of my name"
-        class="page-header__logo"
-      />
+        <nav>
+          <ul class="navigation">
+            <li class="navigation-list">
+              <a href="#home">Home</a>
+            </li>
 
-      <!-- Links to navigate to pages to find about me and my contact details -->
-
-      <nav>
-        <ul class="navigation">
-          <li role="presentation" class="navigation-list">
-            <a href="index.html" class="navigation-list__item--active">Home</a>
-          </li>
-
-          <li role="presentation" class="navigation-list">
-            <a href="about.html" class="navigation-list__item">About</a>
-          </li>
-
-          <li role="presentation" class="navigation-list">
-            <a href="contact.html" class="navigation-list__item">Contact</a>
-          </li>
-          <li role="presentation" class="navigation-list">
-            <a href="work.html" class="navigation-list__item">Work</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="profile">
-      <img
-        class="profile_image"
-        src="./img/profile3.jpg"
-        alt="Logo of my company"
-      />
-      <h1>Hello World!</h1>
-      <p>My name is Nirlep. I am a <span>web</span> developer from USA.</p>
-      <a href="work.html">Check out some of my code</a>
+            <li class="navigation-list">
+              <a href="#about">About</a>
+            </li>
+            <li class="navigation-list">
+              <a href="#work">Work</a>
+            </li>
+            <li class="navigation-list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-    <br /><br />
+    <!-- home -->
+    <div id="home">
+      <div class="profile">
+        <img
+          class="profile_image"
+          src="./img/profile3.jpg"
+          alt="Logo of my company"
+        />
+        <h1>Hi. I'm <strong>Nirlep Shah</strong>.</h1>
+        <h2>
+          I am a
+          <strong style="text-decoration: underline">Web developer</strong> and
+          a <strong style="text-decoration: underline"> Student </strong>from
+          USA
+        </h2>
+        <a href="#work" style="text-decoration: none">
+          <h3 style="color: black; font-size: xx-large; font-weight: bold">
+            Check out some of my code
+          </h3></a
+        >
+      </div>
+      <br /><br />
+    </div>
 
-    <div class="footer">
-      <p><strong> Find me on </strong></p>
-      <div>
-        <a href="https://github.com/" target="_blank">
-          <img src="./img/github_icon.svg" alt="Github Logo"
-        /></a>
+    <!-- About -->
 
-        <a href="https://twitter.com/" target="_blank">
-          <img src="./img/twitter_icon.svg" alt="Twitter Logo"
-        /></a>
+    <div id="about" class="container">
+      <div class="one">
+        <h1 class="work">About Me</h1>
+        <p>This is what I enjoy doing:</p>
+        <ul>
+          <li>Front-end development</li>
+          <li>Back-end development</li>
+          <li>Test driven development</li>
+          <li>Native App development</li>
+          <li>Exercise</li>
+          <li>Listening Music</li>
+          <li>Learning new things</li>
+        </ul>
+      </div>
+      <div class="two">
+        <a href="#" class="button1" target="_blank">Download my CV</a>
+      </div>
 
-        <a href="https://www.linkedin.com/" target="_blank">
-          <img src="./img/linkedin_icon.svg" alt="LinkedIn Logo"
-        /></a>
+      <div class="berlin-image">
+        <img src="./img/berlin.svg" alt="svgimage" />
+      </div>
+      <div class="three">
+        <p>My Career aspiration is to be a full stack Web Developer</p>
+        <br />
+      </div>
+      <u><h2>Technologies worked on:</h2></u> <br />
+      <p>HTML, CSS, JavaScript, React, React Native</p>
+
+      <p>Angular, Node.js, Express, MongoDB, Github, APIs</p>
+      <br />
+
+      <a href="#work" style="text-decoration: none"
+        ><h2
+          style="
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            text-decoration: none;
+          "
+        >
+          See some of my recent work
+        </h2></a
+      >
+    </div>
+
+    <!-- Work -->
+    <div id="work">
+      <h1 class="work">Work</h1>
+
+      <div class="grid">
+        <div class="grid__item1">
+          <h2>myFlix-Client</h2>
+          <p>
+            myFlix is a client-side application built using ReactJS for its
+            existing server-side code. myFlix app is a responsive app that
+            displays a list of movies for registered users and details about a
+            particular. Users can access information on movies, directors, and
+            genres. It also uses React Redux library.
+          </p>
+          <a
+            href="https://github.com/nirlepshah/myFlix-Client/tree/branch5"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >See project on GitHub</a
+          >
+          <br />
+          <br />
+          <a href="#">
+            <img
+              class="work_img1"
+              src="./img/MainView1.png"
+              alt="Main View"
+              width="600"
+              height="450"
+            />
+          </a>
+        </div>
+        <div class="grid__item2">
+          <h2>Pokédex Javascript App</h2>
+          <p>
+            The objective of this small web application is to load data from an
+            external source (APP), view the list of the items and on user
+            selection (e.g., by clicking on a list item), view details for that
+            item.
+          </p>
+          <p>
+            The app loads data from an external
+            <a
+              href="https://pokeapi.co/api/v2/pokemon/?limit=75"
+              target="_blank"
+              style="color: black"
+            >
+              Pokémon API</a
+            >
+          </p>
+          <p>
+            It displays list of Pokemon on the screen once the page is loaded
+          </p>
+          <p>
+            it has ability to select any of the Pokémon from the list and
+            display its characteristics
+          </p>
+
+          <a
+            href="https://github.com/nirlepshah/simple-js-app"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >See project on GitHub</a
+          >
+          <br /><br />
+          <a href="https://nirlepshah.github.io/simple-js-app/" target="_blank">
+            <img
+              class="work_img2"
+              src="./img/LandingPage.png"
+              alt="LandingPage"
+              width="600"
+              height="300"
+            />
+          </a>
+        </div>
+
+        <div class="grid__item5">
+          <h2>meet APP</h2>
+          <p>
+            Meet APP a serverless, progressive web application (PWA) with React
+            using a test-driven development (TDD) technique. The application
+            uses the Google Calendar API to fetch upcoming events.
+          </p>
+
+          <a
+            href="https://github.com/nirlepshah/meet/tree/branch3"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >See project on GitHub</a
+          >
+          <br />
+          <br />
+          <a
+            href="https://nirlepshah.github.io/meet/"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >Link to the Live Project</a
+          ><br /><br />
+          <a href="https://nirlepshah.github.io/meet/" target="_blank">
+            <img class="work_img4" src="./img/MeetApp.png" alt="MeetApp" />
+            <br /><br />
+            <img class="work_img5" src="./img/MeetApp1.png" alt="MeetApp1" />
+          </a>
+        </div>
+        <div class="grid__item6">
+          <h2>chatApp</h2>
+          <p>
+            ChatApp is a chat app for mobile devices using React Native, Expo,
+            and Google Firestore Database. The app provides users with a chat
+            interface and options to share images and their location.
+          </p>
+
+          <a
+            href="https://github.com/nirlepshah/chatApp/tree/branch4"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >See project on GitHub</a
+          >
+          <br />
+          <br />
+          <a href="#">
+            <img
+              class="work_img6"
+              src="./img/ChatApp.png"
+              alt="ChatApp"
+              width="600"
+              height="500"
+            />
+          </a>
+          <br /><br />
+        </div>
+        <div class="grid__item7">
+          <h2>myFlix-Angular-client</h2>
+          <p>
+            This project was generated with Angular CLI version 13.3.0. Angular
+            has been used to build the client-side for an application called
+            myFlix. It is based on its existing server-side code (REST API and
+            database), with supporting documentation.
+          </p>
+
+          <a
+            href="https://github.com/nirlepshah/myFlix-Angular-client/tree/branch4"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >See project on GitHub</a
+          >
+          <br />
+          <br />
+
+          <a
+            href="https://nirlepshah.github.io/myFlix-Angular-client/"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >Link to the Live Project</a
+          ><br /><br />
+          <a
+            href="https://nirlepshah.github.io/myFlix-Angular-client/"
+            target="_blank"
+          >
+            <img
+              class="work_img7"
+              src="./img/myFlix-Angular-client.png"
+              alt="myFlix_AngularApp"
+            />
+          </a>
+          <br /><br />
+        </div>
+        <div class="grid__item3">
+          <h2><b> &nbsp JQuery mini-project, the To-Do-List app</b></h2>
+          <p>Features</p>
+          <p>The user can add a new item to a list of items.</p>
+          <p>The user can cross out an item from the list of items.</p>
+          <p>The user can delete an item from the list of items</p>
+          <p>The user can change the order of items in the list of items.</p>
+          <a
+            href="https://nirlepshah.github.io/to-do-list-app/"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >See project on GitHub</a
+          ><br /><br />
+          <a
+            href="https://nirlepshah.github.io/to-do-list-app/"
+            target="_blank"
+          >
+            <img
+              class="work_img3"
+              src="./img/ToDoListApp.png"
+              alt="ToDoListApp"
+              width="600"
+            />
+          </a>
+        </div>
+        <div class="grid__item4">
+          <h2>Server-side component of Movie App</h2>
+          <p>
+            The API for the "movies" web application interacts with a database
+            that stores data about different movies. The web application
+            provides users with access to information about different movies,
+            directors, and genres. Users are able to sign up, update their
+            personal information, and create a list of their favorite movies
+          </p>
+
+          <a
+            href="https://github.com/nirlepshah/movie_api"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >See project on GitHub</a
+          >
+          <br />
+          <br />
+          <a
+            href="https://mymovieapp08.herokuapp.com/"
+            target="_blank"
+            style="color: black; font-size: large; font-weight: bold"
+            >Link to the hosted version of APP</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="contact1">
+        <h1 class="work">Contact Form</h1>
+
+        <div class="container1">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+              required
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+              required
+            />
+            <label for="Telephone">Telephone</label>
+            <input
+              type="tel"
+              id="telephone"
+              name="Telephone"
+              placeholder="Your Telephone number.."
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              required
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px; resize: none"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+
+        <br /><br />
+        <a href="mailto:nirlep@gmail.com" class="contact">
+          <strong
+            ><em style="display: inline-block; vertical-align: middle"
+              >Contact me Now</em
+            ></strong
+          ></a
+        >
+      </div>
+      <br />
+
+      <div class="footer">
+        <p><strong> Find me on </strong></p>
+        <div>
+          <a href="https://github.com/nirlepshah" target="_blank">
+            <img src="./img/github_icon.svg" alt="Github Logo"
+          /></a>
+
+          <a href="https://twitter.com/" target="_blank">
+            <img src="./img/twitter_icon.svg" alt="Twitter Logo"
+          /></a>
+
+          <a href="https://www.linkedin.com/in/nirlep-shah/" target="_blank">
+            <img src="./img/linkedin_icon.svg" alt="LinkedIn Logo"
+          /></a>
+        </div>
       </div>
     </div>
   </body>
