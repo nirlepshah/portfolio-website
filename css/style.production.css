@@ -79,7 +79,7 @@ p {
   justify-content: space-between;
   height: 5rem;
   background-color:black;
-  justify-content: center;
+  justify-content: right;
   padding-left:30px;
   
   
@@ -91,8 +91,7 @@ p {
   display: flex;
   list-style: none;
   font-family: fantasy;
-  flex-direction: row; 
-  text-align: center;
+   
   font-size: x-large;
   text-decoration: none;
  
