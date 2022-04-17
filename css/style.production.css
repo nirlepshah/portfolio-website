@@ -1,76 +1,38 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
+
 
 * {
-  -webkit-box-sizing: border-box;
+
   box-sizing: border-box;
 }
 
 body {
   font-family: "Andada Pro", serif;
   margin: 0;
-  background-color: #f1f1f1;
+  background-color: #aaa;
   position: relative;
   min-height: 100vh;
   padding-left: 0.6rem;
   padding-right: 0.8rem;
   padding-bottom: 85px;
-  /* background-image: url(../img/background3.jpg); */
+  /* background-image: url(../img/bck2.avif); */
   background-size: cover;
   height: 100%;
   overflow: auto;
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 p {
   font-size: 1.25rem;
   font-style: normal;
 }
-.navigation-list__item {
-  font-family: fantasy;
-  color: #0000ff;
-}
-.navigation-list__item--active {
-  font-family: fantasy;
-  color: #ad0034;
-  text-decoration: none;
-}
-.primary_link:hover {
-  text-decoration: none;
-}
-.secondary_link:visited {
-  color: #808080;
-}
 
-.secondary_link:hover {
-  color: #a52a2a;
-}
-
-.secondary_link:active {
-  color: #ff69b4;
-}
-
-.primary_button:hover,
-.secondary_button:hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-.secondary_button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #4169e1;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 5rem;
-}
 
 .profile {
   display: grid;
   width: 40rem;
   margin: 0 auto;
+  
   text-align: center;
 }
 .profile_image {
@@ -94,51 +56,87 @@ p {
   width: 100%;
   text-align: center;
   line-height: 0.2rem;
+  height: auto;
+  
+}
+.pageheader{
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  line-height: 0.2rem;
+  padding-right: 2rem;
+   text-align: center;
+   
+   
 }
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
+  
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  
   justify-content: space-between;
   height: 5rem;
+  background-color:black;
+  justify-content: center;
+  padding-left:30px;
+  
+  
 }
 
-.page-header:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  text-align: right;
-  padding-right: 10px;
-}
+
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
   list-style: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  font-family: fantasy;
+  flex-direction: row; 
+  text-align: center;
+  font-size: x-large;
+  text-decoration: none;
+ 
+}
+
+.navigation-list a{
+  color: white;
+}
+
+.navigation-list a:hover{
+  color:   #00ff99
+}
+
+.navigation-list {
+  padding: 1rem;
+  
+}
+
+ .contact {
+  color: black;
   font-size: x-large;
 }
-.navigation-list {
-  padding: 0.125rem;
+#home{
+  padding-bottom: 25rem;
+  padding-top: 15rem;
+  margin: 0 ,0;
+ 
 }
-.contact {
-  color: darkred;
+#about{
+  padding-top: 4.5rem;
+  margin: 0 0;
 }
+
 .work {
   text-align: center;
-  color: #000094;
+  color: black;
   text-decoration: underline;
   line-height: 50%;
 }
+#work{
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
+  
+} 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr  ;
@@ -188,8 +186,6 @@ p {
 }
 
 
-
-
  @media all and (max-width: 1400px) {
   .grid {
     grid-template-columns: 1fr ;
@@ -216,7 +212,7 @@ p {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #357b70;
+  background-color: black;
   color: #ffffff;
   text-decoration: none;
   padding: 10px;
@@ -232,44 +228,42 @@ p {
   display: block;
   text-align: center;
   height: auto;
-  -webkit-animation-name: pop;
+  
   animation-name: pop;
-  -webkit-animation-duration: 2s;
+  
   animation-duration: 2s;
-  -webkit-animation-delay: 2s;
+  
   animation-delay: 2s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
+  
+  animation-iteration-count: infinite;
+  
   animation-timing-function: linear;
   animation-direction: alternate-reverse;
 }
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+ 
+ 
+ 
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+ 
+ 
   align-items: center;
 }
 .one {
-  -ms-flex-item-align: start;
+ 
   align-self: center;
 }
 .two {
   padding-top: 2rem;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
+
   align-self: center;
   padding-bottom: 5rem;
 }
 
 .three {
-  -ms-flex-item-align: start;
+
   align-self: center;
   padding-top: 5rem;
   text-align: left;
@@ -278,36 +272,19 @@ p {
   
 }
 
-@-webkit-keyframes pop {
-  0% {
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
-  }
-  25% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  50% {
-    -webkit-transform: skew(5deg);
-    transform: skew(5deg);
-  }
-  100% {
-    -webkit-transform: translate(10px);
-    transform: translate(10px);
-  }
-}
+
 
 @keyframes pop {
   0% {
-    -webkit-transform: rotate(5deg);
+    
     transform: rotate(5deg);
   }
   25% {
-    -webkit-transform: scale(1, 1);
+    
     transform: scale(1, 1);
   }
   50% {
-    -webkit-transform: skew(5deg);
+    
     transform: skew(5deg);
   }
   100% {
@@ -326,6 +303,10 @@ label {
   text-align: center;
   
 }
+#contact{
+  padding-top: 4.5rem;
+}
+
 .form1{
   display: flex;
   justify-content: center;
@@ -337,4 +318,58 @@ label {
   padding-top: 2rem;
   text-align: center;
   
+  
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  vertical-align: middle;
+  width: 50rem;
+  margin-left: 50px;
+  
+}
+@media all and (max-width: 900px) {
+  .container1 {
+    width: auto;
+    
+    
+  }
 }
