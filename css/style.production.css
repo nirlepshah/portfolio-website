@@ -134,6 +134,7 @@
 	color: white;
 	text-decoration: underline;
 	line-height: 50%;
+    padding-bottom: 2rem;
   }
   #work{
 	padding-top: 4.5rem;
@@ -144,6 +145,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr  ;
 	 column-gap: 0px;
+     padding-top: 1rem;
 	
 	}
 	.grid__item1,.grid__item2,.grid__item3,.grid__item4,.grid__item5,.grid__item6, .grid__item7{
@@ -304,13 +306,9 @@
   }
   
   .three {
-  
 	align-self: center;
 	padding-top: 5rem;
 	text-align: left;
-	
-	
-	
   }
   .AboutSection{
       background-color: #000000;
