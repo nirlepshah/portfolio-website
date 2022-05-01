@@ -62,11 +62,11 @@
 	display: flex;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	line-height: 0.2rem;
 	padding-right: 2rem;
 	 text-align: center;
-	 background-color:black;
+	 /* background-color:black; */
      justify-content:flex-end;
      justify-content: space-between;
      padding-left: 20px ;
@@ -80,7 +80,6 @@
 	display: flex;
 	list-style: none;
 	font-family: fantasy;
-	 
 	font-size: x-large;
 	text-decoration: none;
     
@@ -144,8 +143,8 @@
   .grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr  ;
-	 column-gap: 0px;
-     padding-top: 1rem;
+	column-gap: 0px;
+  padding-top: 1rem;
 	
 	}
 	.grid__item1,.grid__item2,.grid__item3,.grid__item4,.grid__item5,.grid__item6, .grid__item7{
@@ -154,10 +153,9 @@
 	  width: 800px;
 	  height: 600px;
 	  border: solid 0.1rem white;
-	 
 	  margin-bottom: 10px;
-      margin-left: 60px;
-      padding-left: 5px;
+    margin-left: 60px;
+    padding-left: 5px;
       
 	}
     .img1{
