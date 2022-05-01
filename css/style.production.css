@@ -61,7 +61,7 @@
   }
   .pageheader{
 	display: flex;
-	/* position: fixed; */
+	
 	top: 0;
 	width: 100vw;
 	/* line-height: 0.2rem; */
