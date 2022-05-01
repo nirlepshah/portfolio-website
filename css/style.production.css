@@ -160,6 +160,9 @@
       padding-left: 5px;
       
 	}
+    .img1{
+        width: 670px;
+    }
     @media all and (max-width: 1700px) {
         .grid {
           grid-template-columns: 1fr ;
@@ -168,7 +171,6 @@
                h1 {
           font-size: 1.25rem;
         }
-  
    }
    @media all and (max-width: 910px) and (min-width: 721px) {
     .grid {
