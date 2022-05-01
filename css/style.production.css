@@ -61,10 +61,10 @@
   }
   .pageheader{
 	display: flex;
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	width: 100vw;
-	line-height: 0.2rem;
+	/* line-height: 0.2rem; */
 	padding-right: 2rem;
 	 text-align: center;
 	 /* background-color:black; */
