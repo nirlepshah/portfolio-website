@@ -280,13 +280,15 @@ p {
   h1 {
     font-size: 1.25rem;
   }
-  .img1,
+  .img1 {
+    height: 120px;
+    width: 350px;
+  }
   .img2,
   .img3,
   .img5,
   .img6 {
     width: 200px;
-    height: 100px;
   }
 }
 
